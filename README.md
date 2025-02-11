@@ -38,4 +38,7 @@ othentic-cli network contracts
 
 ## AVS Logic implementation
 
-We use [AVS Sample](https://github.com/Othentic-Labs/simple-price-oracle-avs-example) as our blueprint.
+We use [AVS Sample](https://github.com/Othentic-Labs/avs-examples/tree/main/simple-price-oracle-avs-go-example) as our blueprint.
+
+The structure of the AVS is explained in the [AVS](avs/README.md) folder.
+

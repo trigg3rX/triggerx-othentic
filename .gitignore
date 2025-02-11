@@ -3,3 +3,6 @@
 
 # folders
 .keystore
+
+# avs folder
+avs/.env
