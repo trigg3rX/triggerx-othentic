@@ -1,5 +1,10 @@
 # TriggerX
-TriggerX AVS developed from scratchusing Othentic Stack
+TriggerX AVS developed from scratch using Othentic Stack.
+
+- Website: [TriggerX](https://www.triggerx.network/)
+- Twitter: [TriggerX](https://x.com/TriggerXnetwork)
+- EigeLayer Page : [TriggerX](https://holesky.eigenlayer.xyz/avs/0x0c77b6273f4852200b17193837960b2f253518fc/operator-set/4294967295)
+
 
 ## Set the Deployer Keystore
 
@@ -36,9 +41,46 @@ Check the deployed contracts with:
 othentic-cli network contracts
 ```
 
+## AVS Registration and Whitelist Strategies
+
+Run the cmd to register the AVS on EigenLayer:
+
+```bash
+othentic-cli network register
+```
+
+Run the cmd to whitelist the AVS on EigenLayer:
+
+```bash
+othentic-cli network set-staking-contracts
+```
+
+We have whitelisted the following strategies:
+
+```
+stETH, rETH, WETH, lsETH, sfrxETH, ETHx, osETH, cbETH, mETH, ankrETH, EIGEN
+```
+
 ## AVS Logic implementation
 
 We use [AVS Sample](https://github.com/Othentic-Labs/avs-examples/tree/main/simple-price-oracle-avs-go-example) as our blueprint.
 
 The structure of the AVS is explained in the [AVS](avs/README.md) folder.
 
+## Nodes Setup
+
+We need to setup the nodes - Performer, Attestor, Aggregator, and Bootnodes.
+
+Aggregator will also work as Bootstrap Node in our AVS.
+
+### Aggregator (Running)
+
+```
+othentic-cli node aggregator --json-rpc --internal-tasks --metrics --delay 15000
+```
+
+The delay is set to 15 seconds, so the aggregator will wait 15 seconds before submitting the task to the EigenLayer.
+
+### Performer
+
+Currently, the performer will be single, Mulan. The rest 10 registered royalty will be attestors.
