@@ -1,4 +1,4 @@
-module Execution_Service
+module github.com/trigg3rX/triggerx-othentic/avs/Execution_Service
 
 go 1.23
 

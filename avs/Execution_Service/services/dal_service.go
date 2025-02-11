@@ -1,7 +1,6 @@
 package services
 
 import (
-	"Execution_Service/config"
 	"math/big"
 	"encoding/hex"
 	"crypto/ecdsa"
@@ -12,6 +11,8 @@ import (
 	"github.com/ethereum/go-ethereum/common"
 	"github.com/ethereum/go-ethereum/crypto"
 	"github.com/ethereum/go-ethereum/rpc"
+
+	"github.com/trigg3rX/triggerx-othentic/avs/Execution_Service/config"
 )
 
 func Init() {

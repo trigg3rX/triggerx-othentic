@@ -3,8 +3,8 @@ package main
 import (
 	"log"
 	"github.com/gin-gonic/gin"
-	"Execution_Service/services"  
-	"Execution_Service/handlers" 
+	"github.com/trigg3rX/triggerx-othentic/avs/Execution_Service/services"  
+	"github.com/trigg3rX/triggerx-othentic/avs/Execution_Service/handlers" 
 )
 
 func main() {

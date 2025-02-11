@@ -76,11 +76,15 @@ Aggregator will also work as Bootstrap Node in our AVS.
 ### Aggregator (Running)
 
 ```
-othentic-cli node aggregator --json-rpc --internal-tasks --metrics --delay 15000
+make aggregator
 ```
 
 The delay is set to 15 seconds, so the aggregator will wait 15 seconds before submitting the task to the EigenLayer.
 
-### Performer
+### Performer (Running)
+
+```
+make performer
+```
 
 Currently, the performer will be single, Mulan. The rest 10 registered royalty will be attestors.

@@ -1,12 +1,13 @@
 package handlers
 
 import (
-	"Execution_Service/services"
 	"encoding/json"
 	"log"
 	"net/http"
 
 	"github.com/gin-gonic/gin"
+	
+	"github.com/trigg3rX/triggerx-othentic/avs/Execution_Service/services"
 )
 
 func ExecuteTask(c *gin.Context) {
