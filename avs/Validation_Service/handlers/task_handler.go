@@ -3,7 +3,8 @@ import (
 	"encoding/json"
 	"log"
 	"net/http"
-	"Validation_Service/services"  
+
+	"github.com/trigg3rX/triggerx-othentic/avs/Validation_Service/services"
 )
 
 // ValidateTask handles the POST request to `/task/validate`

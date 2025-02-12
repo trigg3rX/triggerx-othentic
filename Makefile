@@ -7,10 +7,24 @@ help:
 ############################# AGGREGATOR #############################
 
 aggregator: ## Start the aggregator node
-	othentic-cli node aggregator --json-rpc --internal-tasks --metrics --delay 15000 --keystore .keystore/deployer.json
-
+	./scripts/aggregator.sh
 
 ############################# PERFORMER #############################
 
 performer: ## Start the performer node
-	./scripts/start-performer.sh
+	./scripts/performer.sh
+
+############################# ATTESTER #############################
+
+attester: ## Start the attester node
+	./scripts/attester.sh
+
+############################# VALIDATION SERVICE #############################
+
+validation-service: ## Start the validation service
+	./scripts/validation-service.sh
+
+############################# EXECUTION SERVICE #############################
+
+execution-service: ## Start the execution service
+	./scripts/execution-service.sh

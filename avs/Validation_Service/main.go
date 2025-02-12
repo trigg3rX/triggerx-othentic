@@ -3,7 +3,8 @@ package main
 import (
 	"log"
 	"net/http"
-	"Validation_Service/handlers" 
+
+	"github.com/trigg3rX/triggerx-othentic/avs/Validation_Service/handlers"
 )
 
 func main() {
